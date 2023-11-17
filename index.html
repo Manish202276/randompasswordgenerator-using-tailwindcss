@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random password generator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body style="background-color: black;">
+    <div class="border-solid border-[1px] border-white-600 ml-[300px] w-[800px] mt-[100px]" >
+        <h1 class="text-white text-center mt-10" >Password Generator</h1>
+        <input class="rounded-[10px] w-[500px] ml-[120px] h-[30px] mt-[20px]" id="pass-box" type="text">
+        <br>
+        <button class="w-[200px] ml-[150px] rounded-[10px] bg-blue-600 mt-[20px] h-[30px]"  id="btn">Generate</button>
+        <button class="w-[200px]  rounded-[10px] bg-blue-600 mt-[20px] h-[30px]" id="copybtn">Copy To ClipBoard</button>
+        <br>
+        <h3 class="ml-[100px] text-white inline-block"  >Password Length</h3>
+        <input class="inline w-[50px] ml-[295px] mt-[30px] "  min="1" id="total-char" value="5" type="number">
+        <br>
+        <h3 class="ml-[100px] text-white inline-block mt-[30px]" >Include uppercase letters</h3>
+        <input class="inline w-[50px] ml-[220px] mt-[30px]" id="upper-case" checked type="checkbox">
+        <br>
+        <h3 class="ml-[100px] text-white inline-block mt-[30px]">Include lowercase letters</h3>
+        <input class="inline w-[50px] ml-[225px] mt-[30px]" id="lower-case" checked type="checkbox">
+        <br>
+        <h3 class="ml-[100px] text-white inline-block mt-[30px]">Include numbers</h3>
+        <input class="inline w-[50px] ml-[280px] mt-[30px]" id="numbers" checked type="checkbox">
+        <br>
+        <h3 class="ml-[100px] text-white inline-block mt-[30px]">Include Symbols</h3>
+        <input class="inline w-[50px] ml-[285px] mt-[30px]" id="symbols" checked type="checkbox">
+    </div>
+    <script src="first.js"></script>
+</body>
+</html>
